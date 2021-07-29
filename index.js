@@ -141,7 +141,7 @@ const ScrollableTabView = createReactClass({
         // make sure the component is mounted (iOS issue)
         setTimeout(() => {
           this.scrollView.scrollTo({x: offset, y: 0, animated: !this.props.scrollWithoutAnimation, });
-        }, 500);
+        }, 200);
       }
     } else {
       if (this.scrollView) {
